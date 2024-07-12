@@ -105,7 +105,7 @@ header h2 {
     width: 100px;
     aspect-ratio: 1;
     position: relative;
-    background-image: url(images/icon-paper.svg); 
+    background-image: url(icon-paper.svg); 
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -125,7 +125,7 @@ header h2 {
     width: 100px;
     aspect-ratio: 1;
     position: relative;
-    background-image: url(images/icon-scissors.svg); 
+    background-image: url(icon-scissors.svg); 
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -145,7 +145,7 @@ header h2 {
     width: 100px;
     aspect-ratio: 1;
     position: relative;
-    background-image: url(images/icon-rock.svg); 
+    background-image: url(icon-rock.svg); 
     background-repeat: no-repeat;
     background-position: center center;
 }
