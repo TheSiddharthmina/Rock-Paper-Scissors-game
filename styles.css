@@ -108,6 +108,7 @@ header h2 {
     background-image: url(icon-paper.svg); 
     background-repeat: no-repeat;
     background-position: center center;
+    cursor: pointer;
 }
 .paper::before { 
     content: "";
@@ -128,6 +129,7 @@ header h2 {
     background-image: url(icon-scissors.svg); 
     background-repeat: no-repeat;
     background-position: center center;
+    cursor: pointer;
 }
 .scissors::before { 
     content: ""; 
@@ -148,6 +150,7 @@ header h2 {
     background-image: url(icon-rock.svg); 
     background-repeat: no-repeat;
     background-position: center center;
+    cursor: pointer;
 }
 .rock::before { 
     content: ""; 
@@ -190,6 +193,7 @@ header h2 {
     letter-spacing: 2px;
     padding: 0.8rem 3.5rem;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 #rules {
     display: grid;
