@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image" sizes="32x32" href="images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <header>
+      <div id="title">
+        <h2>Rock</h2>
+        <h2>Paper</h2>
+        <h2>Scissors</h2>
+      </div>
+      <div id="score">
+        <p id="scoreTitle">Score</p>
+        <p id="scoreNum">0</p>
+      </div>
+    </header>
+<div class="gameField">
+    <section id="betTab" class="tabContent">
+      <div class="betButtons">
+        <button class="betBtn paper tablinks" id="paper" value="0" onclick="playBet(event,'paper')"></button>
+        <button class="betBtn scissors tablinks" id="scissors" value="2" onclick="playBet(event,'scissors')"></button>
+      </div>
+      <div class="betButton">
+        <button class="betBtn rock tablinks" id="rock" value="1" onclick="playBet(event,'rock')"></button>
+      </div>
+    </section>
+
+    <section id="resultTab" class="tabContent">
+      <div class="betArea" id="betArea">
+        <div class="selectedBet">
+          <button class="betBtnplace tablinks" id="myBetPlace"></button>
+          <p>you picked</p>
+        </div>
+        <div class="selectedBet">
+          <button class="betBtnplace tablinks textTransf" id="houseBetPlace"></button>
+        <p>the house picked</p>
+        </div>
+      </div>
+      <div id="replay">
+        <div id="result"></div>
+        <div id="restartBtn" onclick="replay()">play again</div>
+      </div>
+    </section>
+  </div>
+  <section id="rules">
+    <button id="rulesBtn">Rules</button>
+    <div id="messageBox" class="hidden">If the player wins, they gain 1 point. If the computer wins, the player loses one point.
+      <button id="closeButton">&times;</button>
+    </div>
+  </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="Siddharth ">Siddharth</a>
+  </footer>
+
+  <script src="play.js"></script>
+
+</body>
+</html>

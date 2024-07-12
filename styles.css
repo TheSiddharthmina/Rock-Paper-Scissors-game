@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to bottom,  hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-repeat: no-repeat;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 16px;
+    display: grid;
+    place-content: center;
+}
+main {
+    width: 375px;
+    display: grid;
+    align-content: start;
+    gap: 7rem;
+    padding: 2rem;
+}
+.gameField{
+
+    
+}
+
+header {
+    padding: 0.7rem;
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 4px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;   
+}
+header h2 {
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    padding-left: 0.5rem;
+}
+#score {
+    background-color: hsl(0, 0%, 100%);
+    width: 70px;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+#scoreTitle {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    color: hsl(229, 64%, 46%);
+}
+#scoreNum {
+    font-size: 2.2rem;
+    line-height: 1em;
+    font-weight: 700;
+    color: hsl(229, 25%, 31%)
+}
+
+.tabContent {
+    display: grid;
+    row-gap: 3rem;
+}
+.betArea{
+
+}
+.selectedBet{
+    display: grid;
+    justify-items: center;
+    gap: 3rem;
+}
+.selectedBet p{
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+.betButtons {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 3rem;
+    justify-content: space-around;
+}
+.betButton {
+    display: grid;
+    justify-content: center;
+}
+.betBtn {
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    border: none;
+    border-top: 1px solid hsla(0, 0%, 100%, 0);
+    display: grid;
+    place-content: center;
+    line-height: 100px;
+    box-shadow: inset 0px 4px 2px hsl(0, 0%,0%, 0.2);
+}
+.paper {
+    width: 100px;
+    aspect-ratio: 1;
+    position: relative;
+    background-image: url(images/icon-paper.svg); 
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.paper::before { 
+    content: "";
+    width:130px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image: linear-gradient(to top, hsl(230, 89%, 62%), hsl(230, 89%, 65%) );
+    box-shadow: 0 4px 1px hsl(230, 56%, 44%);
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: -2;
+}
+.scissors {
+    width: 100px;
+    aspect-ratio: 1;
+    position: relative;
+    background-image: url(images/icon-scissors.svg); 
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.scissors::before { 
+    content: ""; 
+    width:130px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image: linear-gradient(to top, hsl(39, 89%, 49%), hsl(40, 84%, 53%) );
+    box-shadow: 0 4px 1px hsl(40, 76%, 33%);
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: -1;
+}
+.rock {
+    width: 100px;
+    aspect-ratio: 1;
+    position: relative;
+    background-image: url(images/icon-rock.svg); 
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.rock::before { 
+    content: ""; 
+    width:130px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image: linear-gradient(to top, hsl(349, 71%, 52%), hsl(349, 70%, 56%) );
+    box-shadow: 0 4px 1px hsl(349, 63%, 29%);
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: -1;
+}
+.betBtnplace {
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: hsl(237, 49%, 15%, 0.3);
+    border-radius: 50%;
+    border: none;
+    font-size:  2rem;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+#replay {
+    display: grid;
+    justify-items: center;
+    row-gap: 1rem;
+}
+#result {
+    font-size: 3rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+}
+#restartBtn {
+    background-color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    letter-spacing: 2px;
+    padding: 0.8rem 3.5rem;
+    border-radius: 0.5rem;
+}
+#rules {
+    display: grid;
+    justify-items: center;
+}
+#rulesBtn {
+    line-height: 1rem;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 1);
+    background-color: hsla(0, 0%, 100%, 0);
+    border: 1px solid hsla(0, 0%, 100%, 1);
+    font-size: 0.8rem;
+    line-height: 1rem;
+    letter-spacing: 2px;
+    padding: 0.8rem 2.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#messageBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+#closeButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+  padding: 0;
+  margin: -10px -10px 0 0;
+  color: #333;
+}
+
+
+@media screen  and (min-width:900px) {
+    body {
+        display: grid;
+        place-content: center;
+    }
+    main {
+        width: 800px;
+        justify-items: center;
+    }
+    header {
+        width: 800px;
+        padding: 1rem 3rem;
+    }
+    #betTab {
+        width: 400px;
+
+    }
+    header h2 {
+        font-size: 2.2rem;
+        line-height: 1.8rem;
+    }
+}
